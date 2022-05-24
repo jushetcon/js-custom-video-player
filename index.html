@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+		<link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="/custom-video/css/style.css" />
+		<title>custom video</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<h2 class="title">
+					<span>Custom video player</span>
+				</h2>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container">
+				<div class="video-player">
+					<video class="video" src="/custom-video/assets/video/video.mp4"></video>
+					<div class="player-controls">
+						<div class="video-progress">
+							<div class="video-progress-filled"></div>
+						</div>
+						<div class="inner-player-controls">
+							<button class="play-button" title="Play">
+								<img src="./assets/svg/play.svg" alt="" />
+							</button>
+							<button class="mute control-button" aria-label="mute">
+								<div class="slash"></div>
+								<img src="./assets/svg/volume.svg" alt="mute" />
+							</button>
+
+							<input type="range" class="volume" min="0" max="1" step="0.01" value="1" />
+							<div class="time">
+								<span class="current">0:00</span>/<span class="duration">0:00</span>
+							</div>
+							<button class="fullscreen control-button" aria-label="fullscreen">
+								<img src="./assets/img/fullscreen.png" alt="mute" />
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+		 <div class="footer-data">
+        <p class="copyright">©</p>
+        <p class="year">2022</p>
+        <a class="github-username" href="https://github.com/jushetcon/" target="_blank" rel="noopener noreferrer">github</a>
+      </div>
+      <a href="https://rs.school/js-stage0/" class="rss" target="_blank"> <img src="./assets/svg/rs_school_js.svg" alt="rsc"> </a>
+    </div>
+			</div>
+		</footer>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
